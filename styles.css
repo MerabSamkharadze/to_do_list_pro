@@ -15,6 +15,10 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
+  max-height: 500px; /* Set a max-height for the container */
+  overflow: hidden; /* Hide overflow for the container */
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -65,6 +69,9 @@ button:hover {
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  overflow-y: auto; /* Make the list scrollable */
+  flex-grow: 1; /* Allow the list to grow and fill the available space */
 }
 
 li {
